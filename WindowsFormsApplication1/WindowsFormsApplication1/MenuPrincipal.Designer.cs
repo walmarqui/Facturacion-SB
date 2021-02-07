@@ -68,13 +68,13 @@
             // cotizacionToolStripMenuItem
             // 
             this.cotizacionToolStripMenuItem.Name = "cotizacionToolStripMenuItem";
-            this.cotizacionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cotizacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.cotizacionToolStripMenuItem.Text = "Cotizacion";
             // 
             // facturacionToolStripMenuItem1
             // 
             this.facturacionToolStripMenuItem1.Name = "facturacionToolStripMenuItem1";
-            this.facturacionToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.facturacionToolStripMenuItem1.Size = new System.Drawing.Size(136, 22);
             this.facturacionToolStripMenuItem1.Text = "Facturacion";
             // 
             // mantenimientoToolStripMenuItem
@@ -140,6 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 397);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";

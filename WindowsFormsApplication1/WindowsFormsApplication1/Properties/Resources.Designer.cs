@@ -94,6 +94,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cance {
+            get {
+                object obj = ResourceManager.GetObject("Cance", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Ciberseguridad_2019 {
             get {
                 object obj = ResourceManager.GetObject("Ciberseguridad_2019", resourceCulture);
