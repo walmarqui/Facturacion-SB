@@ -26,21 +26,21 @@ namespace WindowsFormsApplication1
         {
             string usuario;
             string usuario2;
-            string contraseña;
+            string contrasena;
            
             usuario = textBox1.Text;
             usuario2 = textBox1.Text;
-            contraseña = textBox2.Text;
+            contrasena = textBox2.Text;
            
 
-            if (usuario == "admin"  && contraseña == "1234")
+            if (usuario == "admin"  && contrasena == "1234")
             {
                 this.Close();
                
             }
             else
       
-            if (usuario2 == "admin97" && contraseña == "1997")
+            if (usuario2 == "admin97" && contrasena == "1997")
             {
                 this.Close();
             }
