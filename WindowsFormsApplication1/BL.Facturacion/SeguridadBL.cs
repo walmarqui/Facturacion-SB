@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BL.Facturacion
 {
-    public class Class1
+    public class SeguridadBL
     {
+       public  bool Autorizar()
+        {
+            return true;
+        }
     }
 }
