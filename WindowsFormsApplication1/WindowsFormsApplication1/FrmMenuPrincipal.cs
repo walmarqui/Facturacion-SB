@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Login : Form
+    public partial class FrmMenuPrincipal : Form
     {
-        public Login()
+        public FrmMenuPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
