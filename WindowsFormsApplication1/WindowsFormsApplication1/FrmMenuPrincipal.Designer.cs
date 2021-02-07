@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿using System;
+
+namespace WindowsFormsApplication1
 {
     partial class FrmMenuPrincipal
     {
@@ -29,27 +31,27 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.trnsaccionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cotizacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cotizacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.facturacionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rangoDeFacturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionMensualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturasCreditoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.informacionEmpresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cAIYRangoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.agregarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empresaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.facturacionToolStripMenuItem,
-            this.mantenimientoToolStripMenuItem,
+            this.trnsaccionesToolStripMenuItem,
             this.reportesToolStripMenuItem,
+            this.reportesToolStripMenuItem1,
             this.seguridadToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -57,51 +59,29 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // trnsaccionesToolStripMenuItem
+            // 
+            this.trnsaccionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cotizacionesToolStripMenuItem,
+            this.facturacionToolStripMenuItem});
+            this.trnsaccionesToolStripMenuItem.Name = "trnsaccionesToolStripMenuItem";
+            this.trnsaccionesToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.trnsaccionesToolStripMenuItem.Text = "Transacciones";
+            this.trnsaccionesToolStripMenuItem.Click += new System.EventHandler(this.trnsaccionesToolStripMenuItem_Click);
+            // 
+            // cotizacionesToolStripMenuItem
+            // 
+            this.cotizacionesToolStripMenuItem.Name = "cotizacionesToolStripMenuItem";
+            this.cotizacionesToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.cotizacionesToolStripMenuItem.Text = "Cotizaciones";
+            this.cotizacionesToolStripMenuItem.Click += new System.EventHandler(this.cotizacionesToolStripMenuItem_Click);
+            // 
             // facturacionToolStripMenuItem
             // 
-            this.facturacionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cotizacionToolStripMenuItem,
-            this.facturacionToolStripMenuItem1});
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
-            // 
-            // cotizacionToolStripMenuItem
-            // 
-            this.cotizacionToolStripMenuItem.Name = "cotizacionToolStripMenuItem";
-            this.cotizacionToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cotizacionToolStripMenuItem.Text = "Cotizacion";
-            this.cotizacionToolStripMenuItem.Click += new System.EventHandler(this.cotizacionToolStripMenuItem_Click);
-            // 
-            // facturacionToolStripMenuItem1
-            // 
-            this.facturacionToolStripMenuItem1.Name = "facturacionToolStripMenuItem1";
-            this.facturacionToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
-            this.facturacionToolStripMenuItem1.Text = "Facturacion";
-            this.facturacionToolStripMenuItem1.Click += new System.EventHandler(this.facturacionToolStripMenuItem1_Click);
-            // 
-            // mantenimientoToolStripMenuItem
-            // 
-            this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.agregarClienteToolStripMenuItem,
-            this.rangoDeFacturacionToolStripMenuItem,
-            this.empresaToolStripMenuItem});
-            this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
-            this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
-            // 
-            // agregarClienteToolStripMenuItem
-            // 
-            this.agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-            this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.agregarClienteToolStripMenuItem.Text = "Agregar Cliente";
-            this.agregarClienteToolStripMenuItem.Click += new System.EventHandler(this.agregarClienteToolStripMenuItem_Click);
-            // 
-            // rangoDeFacturacionToolStripMenuItem
-            // 
-            this.rangoDeFacturacionToolStripMenuItem.Name = "rangoDeFacturacionToolStripMenuItem";
-            this.rangoDeFacturacionToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.rangoDeFacturacionToolStripMenuItem.Text = "Rango de facturacion";
+            this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -123,6 +103,37 @@
             this.facturasCreditoToolStripMenuItem.Name = "facturasCreditoToolStripMenuItem";
             this.facturasCreditoToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.facturasCreditoToolStripMenuItem.Text = "Facturas Credito";
+            this.facturasCreditoToolStripMenuItem.Click += new System.EventHandler(this.facturasCreditoToolStripMenuItem_Click);
+            // 
+            // reportesToolStripMenuItem1
+            // 
+            this.reportesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informacionEmpresaToolStripMenuItem,
+            this.cAIYRangoToolStripMenuItem,
+            this.agregarClientesToolStripMenuItem});
+            this.reportesToolStripMenuItem1.Name = "reportesToolStripMenuItem1";
+            this.reportesToolStripMenuItem1.Size = new System.Drawing.Size(101, 20);
+            this.reportesToolStripMenuItem1.Text = "Mantenimiento";
+            this.reportesToolStripMenuItem1.Click += new System.EventHandler(this.reportesToolStripMenuItem1_Click);
+            // 
+            // informacionEmpresaToolStripMenuItem
+            // 
+            this.informacionEmpresaToolStripMenuItem.Name = "informacionEmpresaToolStripMenuItem";
+            this.informacionEmpresaToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.informacionEmpresaToolStripMenuItem.Text = "Informacion Empresa";
+            this.informacionEmpresaToolStripMenuItem.Click += new System.EventHandler(this.informacionEmpresaToolStripMenuItem_Click);
+            // 
+            // cAIYRangoToolStripMenuItem
+            // 
+            this.cAIYRangoToolStripMenuItem.Name = "cAIYRangoToolStripMenuItem";
+            this.cAIYRangoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.cAIYRangoToolStripMenuItem.Text = "CAI y Rango";
+            // 
+            // agregarClientesToolStripMenuItem
+            // 
+            this.agregarClientesToolStripMenuItem.Name = "agregarClientesToolStripMenuItem";
+            this.agregarClientesToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.agregarClientesToolStripMenuItem.Text = "Agregar Clientes";
             // 
             // seguridadToolStripMenuItem
             // 
@@ -139,13 +150,6 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // empresaToolStripMenuItem
-            // 
-            this.empresaToolStripMenuItem.Name = "empresaToolStripMenuItem";
-            this.empresaToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.empresaToolStripMenuItem.Text = "Empresa";
-            this.empresaToolStripMenuItem.Click += new System.EventHandler(this.empresaToolStripMenuItem_Click);
-            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,7 +163,7 @@
             this.Name = "FrmMenuPrincipal";
             this.Text = "MenuPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
+            this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -170,17 +174,17 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cotizacionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarClienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem rangoDeFacturacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturacionMensualToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturasCreditoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem seguridadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem empresaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem trnsaccionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cotizacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem informacionEmpresaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cAIYRangoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarClientesToolStripMenuItem;
     }
 }
