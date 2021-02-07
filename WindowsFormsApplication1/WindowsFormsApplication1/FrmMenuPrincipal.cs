@@ -26,10 +26,23 @@ namespace WindowsFormsApplication1
         private void cotizacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var frmCotizacion = new FrmCotizacion();
-            frmCotizacion.ShowDialog();
+            frmCotizacion.MdiParent = this;
+            frmCotizacion.Show();
         }
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void facturacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var frmFactura = new FrmFactura();
+            frmFactura.MdiParent = this;
+            frmFactura.Show();
+        }
+
+        private void agregarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
