@@ -21,5 +21,23 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string usuario;
+            string contrasena;
+
+            usuario = textBox1.Text;
+            contrasena = textBox2.Text;
+
+            if(usuario == "admin" && contrasena == "1234")
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }
+        }
     }
 }

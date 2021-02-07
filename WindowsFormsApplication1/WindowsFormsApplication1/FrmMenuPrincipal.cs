@@ -19,9 +19,15 @@ namespace WindowsFormsApplication1
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var FrmLogin = new FrmLogin();
-            FrmLogin.ShowDialog();
+            Login();
         }
+
+        private void Login()
+        {
+            var frmLogin = new FrmLogin();
+            frmLogin.ShowDialog();
+        }
+    }
 
         private void cotizacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -32,7 +38,7 @@ namespace WindowsFormsApplication1
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-
+               Login();
         }
 
         private void facturacionToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -45,6 +51,13 @@ namespace WindowsFormsApplication1
         private void agregarClienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void empresaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmEmpresa = new FrmEmpresa();
+            frmEmpresa.MdiParent = this;
+            frmEmpresa.Show();
         }
     }
 }
