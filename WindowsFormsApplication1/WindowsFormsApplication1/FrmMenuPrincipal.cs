@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var Login = new Login();
-            Login.ShowDialog();
+            var FrmLogin = new FrmLogin();
+            FrmLogin.ShowDialog();
         }
     }
 }
