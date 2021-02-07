@@ -22,5 +22,16 @@ namespace WindowsFormsApplication1
             var FrmLogin = new FrmLogin();
             FrmLogin.ShowDialog();
         }
+
+        private void cotizacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmCotizacion = new FrmCotizacion();
+            frmCotizacion.ShowDialog();
+        }
+
+        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
