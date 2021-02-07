@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sello-Acreditacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_20159965-stock-photo-protection-concept-computer-keyboard-with.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ciberseguridad_2019.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb2-security-concept-4k-digital-art-creative-3d-lock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6425747-aceptar-compruebe-el-símbolo-icono-el-botón-el-color-azul-brillante-con-sombra-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70cfd994ca8a230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
