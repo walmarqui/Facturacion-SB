@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{EE241124-1D73-47BC-A60D-50B3E37721C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win.FacturacionSB", "WindowsFormsApplication1\Win.FacturacionSB.csproj", "{EE241124-1D73-47BC-A60D-50B3E37721C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL.Facturacion", "BL.Facturacion\BL.Facturacion.csproj", "{3C4922F7-8BBF-428B-A772-C6F9D4C128B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EE241124-1D73-47BC-A60D-50B3E37721C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE241124-1D73-47BC-A60D-50B3E37721C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE241124-1D73-47BC-A60D-50B3E37721C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4922F7-8BBF-428B-A772-C6F9D4C128B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4922F7-8BBF-428B-A772-C6F9D4C128B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4922F7-8BBF-428B-A772-C6F9D4C128B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4922F7-8BBF-428B-A772-C6F9D4C128B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

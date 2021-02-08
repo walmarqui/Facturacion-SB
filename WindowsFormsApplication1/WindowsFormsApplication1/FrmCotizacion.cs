@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class MenuPrincipal : Form
+    public partial class FrmCotizacion : Form
     {
-        public MenuPrincipal()
+        public FrmCotizacion()
         {
             InitializeComponent();
         }
 
-        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmCotizacion_Load(object sender, EventArgs e)
         {
 
         }
