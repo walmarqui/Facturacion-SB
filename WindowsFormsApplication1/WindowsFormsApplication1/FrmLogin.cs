@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Facturacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace WindowsFormsApplication1
 {
     public partial class FrmLogin : Form
     {
+        SeguridadBL _seguridad;
+
         public FrmLogin()
         {
             InitializeComponent();
+
+            _seguridad = new SeguridadBL();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -30,7 +35,9 @@ namespace WindowsFormsApplication1
             usuario = textBox1.Text;
             contrasena = textBox2.Text;
 
-            if(usuario == "admin" && contrasena == "1234")
+           var resultado = _seguridad.Autorizar(usuario, contrasena);
+
+            if(resultado == true)
             {
                 this.Close();
             }

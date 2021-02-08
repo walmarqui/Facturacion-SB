@@ -8,9 +8,25 @@ namespace BL.Facturacion
 {
     public class SeguridadBL
     {
-       public  bool Autorizar()
+        public bool Autorizar(string usuario, string contrasena)
         {
-            return true;
-        }
-    }
-}
+            if (usuario == "admin" && contrasena == "123")
+                    {
+                    return true;
+                    }
+            else
+            {
+                if (usuario == "user" && contrasena == "1234")
+                    
+                    {
+                    return true;
+                      }                   
+                 }
+
+            return false; 
+          }
+
+     }
+} 
+       
+
