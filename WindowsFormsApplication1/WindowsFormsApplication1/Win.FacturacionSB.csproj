@@ -153,12 +153,6 @@
   <ItemGroup>
     <None Include="Resources\Cance.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BL.Facturacion\BL.Facturacion.csproj">
-      <Project>{3c4922f7-8bbf-428b-a772-c6f9d4c128b4}</Project>
-      <Name>BL.Facturacion</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
