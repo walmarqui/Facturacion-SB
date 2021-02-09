@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BL.Facturacion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace WindowsFormsApplication1
 {
     public partial class FrmLogin : Form
     {
+        SeguridadBL _seguridad;
+
         public FrmLogin()
         {
             InitializeComponent();
+
+            _seguridad = new SeguridadBL();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -25,32 +30,21 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             string usuario;
-            string usuario2;
             string contrasena;
-           
+
             usuario = textBox1.Text;
-            usuario2 = textBox1.Text;
             contrasena = textBox2.Text;
-           
 
-            if (usuario == "admin"  && contrasena == "1234")
-            {
-                this.Close();
-               
-            }
-            else
-      
-            if (usuario2 == "admin97" && contrasena == "1997")
+           var resultado = _seguridad.Autorizar(usuario, contrasena);
+
+            if(resultado == true)
             {
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecto");
+                MessageBox.Show("Usuario o contraseña incorrecta");
             }
-
-             
-
         }
     }
 }
