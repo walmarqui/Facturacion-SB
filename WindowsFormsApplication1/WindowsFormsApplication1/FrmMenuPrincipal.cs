@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
     {
         public FrmMenuPrincipal()
         {
-            InitializeComponent();
+            
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,6 +53,11 @@ namespace WindowsFormsApplication1
         }
 
         private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void facturacionMensualToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
