@@ -30,21 +30,31 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             string usuario;
+            string usuario2;
             string contrasena;
-
+           
             usuario = textBox1.Text;
+            usuario2 = textBox1.Text;
             contrasena = textBox2.Text;
 
            var resultado = _seguridad.Autorizar(usuario, contrasena);
 
             if(resultado == true)
             {
-                this.Close();
+                Close();
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña incorrecta");
+                MessageBox.Show("Usuario o contraseña incorrecto");
             }
+
+             
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

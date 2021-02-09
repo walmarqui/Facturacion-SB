@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formfacturacionmensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formfacturacionmensual.Designer.cs">
+      <DependentUpon>formfacturacionmensual.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formfacturacionmensual.resx">
+      <DependentUpon>formfacturacionmensual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCotizacion.resx">
       <DependentUpon>FrmCotizacion.cs</DependentUpon>
     </EmbeddedResource>

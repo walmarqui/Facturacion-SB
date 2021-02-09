@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
     {
         public FrmMenuPrincipal()
         {
-            InitializeComponent();
+            
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
@@ -30,29 +30,21 @@ namespace WindowsFormsApplication1
 
         private void cotizacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void trnsaccionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void reportesToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cotizacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             var frmCotizacion = new FrmCotizacion();
             frmCotizacion.MdiParent = this;
             frmCotizacion.Show();
         }
-    
-       private void FrmMenuPrincipal_Load(object sender, EventArgs e)
+
+        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-               Login();
+            Login();
+        }
+
+        private void facturacionToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var frmFactura = new FrmFactura();
+            frmFactura.MdiParent = this;
+            frmFactura.Show();
         }
 
         private void agregarClienteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,30 +52,14 @@ namespace WindowsFormsApplication1
 
         }
 
-        
-
         private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var frmFactura = new FrmFactura();
-            frmFactura.MdiParent = this;
-            frmFactura.Show();
-        }
-
-        private void informacionEmpresaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var frmEmpresa = new FrmEmpresa();
-            frmEmpresa.MdiParent = this;
-            frmEmpresa.Show();
-        }
-
-        private void facturasCreditoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void FrmMenuPrincipal_Load_1(object sender, EventArgs e)
+        private void facturacionMensualToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Login();
+
         }
     }
 }
